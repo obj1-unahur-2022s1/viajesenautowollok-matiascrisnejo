@@ -5,6 +5,14 @@ object oficina {
 	var	primeraOpcion
 	var segundaOpcion
 	
+	method primeraOpcion(){
+		return primeraOpcion
+	}
+	
+	method segundaOpcion(){
+		return segundaOpcion
+	}
+	
 	method asignarRemiseras(remisera1, remisera2){
 		primeraOpcion = remisera1
 		segundaOpcion = remisera2

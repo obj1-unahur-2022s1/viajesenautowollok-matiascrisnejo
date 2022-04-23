@@ -12,7 +12,7 @@ object roxana{
 
 
 object gabriela{
-	var precioConRecargo = 0
+	var precioConRecargo 
 	
 	method precioViaje(unCliente,unaDistancia){
 		precioConRecargo = (unCliente.precioKilometro()* 20/100) + unCliente.precioKilometro()
@@ -24,7 +24,7 @@ object gabriela{
 
 
 object mariela{
-	var precioDelViaje = 0 
+	var precioDelViaje
 	
 	method precioViaje(unCliente,unaDistancia){
 		precioDelViaje = unaDistancia * unCliente.precioKilometro()
@@ -49,14 +49,18 @@ object juana{
 
 
 object lucia{
-	var reemplazo
+	var reemplazarA
+	
 	method reemplazarA(unaRemisera){
-		reemplazo = unaRemisera
+		reemplazarA = unaRemisera
+	}
+	method reemplazarA(){
+		return reemplazarA
 	}
 	
 	method precioViaje(unCliente,unaDistancia){
 		
-		return reemplazo.precioViaje(unCliente,unaDistancia)
+		return reemplazarA.precioViaje(unCliente,unaDistancia)
 	}
 }
   

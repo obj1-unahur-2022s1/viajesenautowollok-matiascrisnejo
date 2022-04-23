@@ -19,6 +19,9 @@ object anaMaria{
 	}
 	method estaEstable(){
 		return estaEstable
+	}
+	method estaEstable(estabilidad){
+		estaEstable = estabilidad
 	}	
 }
 
@@ -28,17 +31,26 @@ object teresa{
 	method precioKilometro(){
 		return valorTeresa
 	}
-		
+	method valorTeresa(){
+		return valorTeresa
+	}
+	method valorTeresa(unValor){
+		return unValor
+	}	
 }
 
 object melina{
-	var trabajando 
+	var trabajandoPara 
 	
 	method trabajandoPara(unaClienta){
-		trabajando = unaClienta
+		trabajandoPara = unaClienta
 	}
+	method trabajandoPara(){
+		return trabajandoPara
+	}
+	
 	method precioKilometro(){
-		return trabajando.precioKilometro() - 3
+		return trabajandoPara.precioKilometro() - 3
 	}
 }
 
