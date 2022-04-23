@@ -12,24 +12,24 @@ object roxana{
 
 
 object gabriela{
+	var precioConRecargo = 0
+	
 	method precioViaje(unCliente,unaDistancia){
-		var precioConRecargo = (unCliente.precioKilometro()* 20/100) + unCliente.precioKilometro()
+		precioConRecargo = (unCliente.precioKilometro()* 20/100) + unCliente.precioKilometro()
 		return precioConRecargo * unaDistancia
 	}
+	
 	
 }
 
 
 object mariela{
+	var precioDelViaje = 0 
+	
 	method precioViaje(unCliente,unaDistancia){
-		var precioDelViaje = unaDistancia * unCliente.precioKilometro()
-		
-		if (precioDelViaje <= 50){
-			return 50
-		}
-		else{
-			return precioDelViaje
-		}
+		precioDelViaje = unaDistancia * unCliente.precioKilometro()
+		return 50.max(precioDelViaje)
+	
 		
 	}
 	

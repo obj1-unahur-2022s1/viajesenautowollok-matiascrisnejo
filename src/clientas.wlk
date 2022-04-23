@@ -27,11 +27,13 @@ object teresa{
 	
 	method precioKilometro(){
 		return valorTeresa
-	}	
+	}
+		
 }
 
 object melina{
 	var trabajando 
+	
 	method trabajandoPara(unaClienta){
 		trabajando = unaClienta
 	}
