@@ -1,3 +1,6 @@
+/*
+ * Cooperativa: Bien
+ */
 import remiseras.*
 import clientas.*
 
@@ -27,11 +30,8 @@ object oficina {
 	}
 	
 	method intercambiarRemiseras(){
-		var terceraOpcion = segundaOpcion
-		
-		segundaOpcion = primeraOpcion
-		primeraOpcion = terceraOpcion
-		
+		/* Debes reutilizar los métodos para no replicar codigo */
+		self.asignarRemiseras(segundaOpcion,primeraOpcion )
 		
 	}
 	

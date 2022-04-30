@@ -1,22 +1,18 @@
+/*
+ * CLIENTAS: Muy bien 
+ */
 object ludmila {
 	
-	method precioKilometro(){
-		return 18
-	}	
+	method precioKilometro() = 18
+		
 }
 
 object anaMaria{
 	var estaEstable = true 
 	
+	/* Te dejo una forma resumida de escribir el metodo con el if y return */
+	method precioKilometro() = if(self.estaEstable()){30}else{25}
 	
-	method precioKilometro(){
-		if(self.estaEstable()){
-			return 30
-		}
-		else{
-			return 25
-		}
-	}
 	method estaEstable(){
 		return estaEstable
 	}

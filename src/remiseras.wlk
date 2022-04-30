@@ -1,5 +1,5 @@
 /*
- * definir remiseras y clientes.
+ * REMISERAS: Bien
  */
 import clientas.*
 
@@ -12,26 +12,27 @@ object roxana{
 
 
 object gabriela{
-	var precioConRecargo 
+	/* No hace falta el atributo precioConRecargo 
+	 * Para sumar un % a un valor podes hacer = valor * 1.%
+	 * Te dejo el método resumido con el calculo multiplicando 1.% 
+	 */
 	
-	method precioViaje(unCliente,unaDistancia){
-		precioConRecargo = (unCliente.precioKilometro()* 20/100) + unCliente.precioKilometro()
-		return precioConRecargo * unaDistancia
-	}
+	method precioViaje(unCliente,unaDistancia) =unCliente.precioKilometro() * 1.2 * unaDistancia
 	
 	
 }
 
 
 object mariela{
-	var precioDelViaje
+	/* No hace falta el atributo precioDelViaje 
+	 * Te dejo el método resumido
+	*/
 	
-	method precioViaje(unCliente,unaDistancia){
-		precioDelViaje = unaDistancia * unCliente.precioKilometro()
-		return 50.max(precioDelViaje)
+	method precioViaje(unCliente,unaDistancia) = 
+		50.max(unaDistancia * unCliente.precioKilometro())
 	
 		
-	}
+
 	
 }
 
